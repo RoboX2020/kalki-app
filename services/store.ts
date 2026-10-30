@@ -1,3 +1,7 @@
+// ====================================================================
+// store.ts - the app's memory: posts, comments, demands, messages and the
+// logged-in user, kept in one shared place so every component agrees.
+// ====================================================================
 import { Post, User, Demand, Message } from '../types';
 import {
     collection,

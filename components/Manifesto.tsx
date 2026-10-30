@@ -1,3 +1,7 @@
+// ====================================================================
+// Manifesto.tsx - the Kalki movement's declaration page: styled text
+// explaining what the app believes in.
+// ====================================================================
 import React from 'react';
 
 const Manifesto: React.FC<{onClose: () => void}> = ({ onClose }) => {

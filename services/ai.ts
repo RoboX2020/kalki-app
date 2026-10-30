@@ -1,3 +1,8 @@
+// ====================================================================
+// ai.ts - the oracle's voice: sends the user's question to OpenAI with the
+// Kalki persona prompt and returns the mystical reply. Needs an API key
+// in the environment to speak.
+// ====================================================================
 import OpenAI from 'openai';
 
 const apiKey = import.meta.env.VITE_OPENAI_API_KEY;

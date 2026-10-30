@@ -1,3 +1,7 @@
+// ====================================================================
+// FireBackground.tsx - the animated flames behind everything: a canvas of
+// rising fire particles drawn fresh every frame. Pure atmosphere.
+// ====================================================================
 import React, { useEffect, useRef } from 'react';
 
 const FireBackground: React.FC = () => {

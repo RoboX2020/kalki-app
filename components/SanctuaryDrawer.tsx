@@ -1,3 +1,7 @@
+// ====================================================================
+// SanctuaryDrawer.tsx - the slide-out 'sanctuary' panel: the private chat
+// where you consult Kalki (the AI oracle) one on one.
+// ====================================================================
 import React, { useState, useEffect, useRef } from 'react';
 import { Message, User } from '../types';
 import { store } from '../services/store';

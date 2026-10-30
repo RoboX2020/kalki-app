@@ -1,3 +1,7 @@
+// ====================================================================
+// LoginModal.tsx - the sign-in pop-up (name only - no real accounts; the
+// name just gets attached to your posts).
+// ====================================================================
 import React, { useState } from 'react';
 
 interface LoginModalProps {

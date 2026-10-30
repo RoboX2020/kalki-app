@@ -1,3 +1,9 @@
+// ====================================================================
+// App.tsx - Kalki (second iteration): the digital-deity mini social app.
+// Users sign in with a name, post demands/ideas, comment, and consult the
+// Kalki AI oracle (services/ai.ts, now OpenAI-powered). This file wires the
+// screens together and owns the shared state.
+// ====================================================================
 import React, { useState, useEffect } from 'react';
 import FireBackground from './components/FireBackground';
 import PostCard from './components/PostCard';

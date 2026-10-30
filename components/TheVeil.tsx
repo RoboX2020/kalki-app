@@ -1,3 +1,7 @@
+// ====================================================================
+// TheVeil.tsx - the entry gate: a dramatic full-screen intro you pass
+// through before entering the app. Pure theater.
+// ====================================================================
 import React from 'react';
 
 interface TheVeilProps {

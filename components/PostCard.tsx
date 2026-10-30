@@ -1,3 +1,6 @@
+// ====================================================================
+// PostCard.tsx - one post in the feed: its text, author, and comments.
+// ====================================================================
 import React, { useState } from 'react';
 import { Post } from '../types';
 import TheVeil from './TheVeil';

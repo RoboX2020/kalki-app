@@ -1,3 +1,6 @@
+// ====================================================================
+// CreatePostModal.tsx - the pop-up form for writing a new post/demand.
+// ====================================================================
 import React, { useState, useEffect } from 'react';
 import { consultKalki } from '../services/ai';
 import { Demand, Tenet } from '../types';

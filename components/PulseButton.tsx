@@ -1,3 +1,6 @@
+// ====================================================================
+// PulseButton.tsx - a button with a heartbeat glow animation.
+// ====================================================================
 import React, { useState, useEffect } from 'react';
 import { Pulse } from '../types';
 

@@ -1,3 +1,7 @@
+// ====================================================================
+// ChatSection.tsx - a conversation view: shows messages and sends new
+// ones through the store.
+// ====================================================================
 import React, { useState, useRef, useEffect } from 'react';
 import { Comment } from '../types';
 import { getKalkiChatResponse } from '../services/geminiService';

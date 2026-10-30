@@ -19,6 +19,7 @@ const FireBackground: React.FC = () => {
     canvas.width = width;
     canvas.height = height;
 
+    // One ember: where it is, how fast it rises and drifts, and how bright.
     interface Particle {
       x: number;
       y: number;
@@ -31,6 +32,7 @@ const FireBackground: React.FC = () => {
     }
 
     const particles: Particle[] = [];
+    // (Phones get fewer embers so the animation stays smooth.)
     const particleCount = width < 768 ? 40 : 100; // Fewer particles on mobile
 
     const colors = [
@@ -40,6 +42,8 @@ const FireBackground: React.FC = () => {
       '255, 255, 255' // White/hot
     ];
 
+    // Spawn a new ember just below the screen with randomized size, speed,
+    // color and lifespan, so the fire never looks repetitive.
     const createParticle = (): Particle => {
       return {
         x: Math.random() * width,
@@ -57,6 +61,8 @@ const FireBackground: React.FC = () => {
       particles.push(createParticle());
     }
 
+    // Every frame: embers rise, wobble sideways and fade; burnt-out ones are
+    // reborn at the bottom - an endless fire.
     const animate = () => {
       ctx.clearRect(0, 0, width, height);
       

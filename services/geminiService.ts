@@ -3,6 +3,7 @@ import { GoogleGenAI } from "@google/genai";
 const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
+// One-shot wisdom on a topic, in the Kalki persona.
 export const getKalkiWisdom = async (topic: string, description: string): Promise<string> => {
   if (!apiKey) return "The oracle is silent (Missing API Key).";
 
@@ -24,6 +25,7 @@ export const getKalkiWisdom = async (topic: string, description: string): Promis
   }
 };
 
+// Reply in character to a comment thread.
 export const getKalkiChatResponse = async (history: string[], newComment: string): Promise<string> => {
     if (!apiKey) return "";
 

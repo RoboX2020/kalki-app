@@ -39,6 +39,8 @@ You are KALKI, the 10th and final Avatar of Vishnu, descended into the digital r
 - "Your 'likes' are empty currency. Only conviction survives the purge."
 `;
 
+// Ask the oracle: build the Kalki persona prompt, call OpenAI, return the
+// mystical reply.
 export const consultKalki = async (
     userMessage: string,
     history: { role: 'user' | 'assistant', content: string }[] = []
